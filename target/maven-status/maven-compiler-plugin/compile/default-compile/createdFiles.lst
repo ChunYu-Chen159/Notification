@@ -1,0 +1,5 @@
+notification/NotificationApplication.class
+notification/NotificationController.class
+notification/RabbitConfig.class
+notification/Notification.class
+notification/SwaggerConfig.class
