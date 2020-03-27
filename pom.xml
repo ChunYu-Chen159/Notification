@@ -139,6 +139,12 @@
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-contract-verifier</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
 
@@ -178,10 +184,20 @@
 			</plugin>
 
 			<!-- Info page provides Git Information -->
-<!--			<plugin>
+			<plugin>
 				<groupId>pl.project13.maven</groupId>
 				<artifactId>git-commit-id-plugin</artifactId>
-			</plugin>-->
+			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-contract-maven-plugin</artifactId>
+				<version>1.2.2.RELEASE</version>
+				<extensions>true</extensions>
+				<configuration>
+					<baseClassForTests>notification.BaseTestClass</baseClassForTests>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

@@ -28,7 +28,7 @@ public class NotificationController {
     }
 
 	// 模擬404
-	@ApiOperation(value = "測試此伺服器是否成功連線", notes = "成功連線就回傳success")
+	@ApiOperation(value = "模擬404", notes = "回傳404")
 	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/index2", method = RequestMethod.GET)
 	public ResponseEntity<Notification> index2()
@@ -38,7 +38,7 @@ public class NotificationController {
 	}
 
 	// 模擬回應
-	@ApiOperation(value = "測試是否成功連線", notes = "成功連線就回傳success")
+	@ApiOperation(value = "模擬延遲", notes = "回應延遲")
 	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/index3", method = RequestMethod.GET)
 	public String index3()
@@ -55,17 +55,6 @@ public class NotificationController {
 		}
 		return result;
 	}
-
-/*	@ApiOperation(value = "測試此伺服器是否成功連線", notes = "成功連線就回傳success")
-	@CrossOrigin(origins = "*")
-	@RequestMapping(value = "/getAMQPMessage", method = RequestMethod.GET)
-//	@RabbitListener(bindings = @QueueBinding(value = @Queue, exchange = @Exchange(value="payment.fanout", type= ExchangeTypes.FANOUT)))
-	@RabbitListener(queues = "date") // Queue name
-	public void getAMQPMessage(String datee)
-	{
-		String getMessage = "Receiver =============" + datee;
-		System.out.println(getMessage);
-	}*/
 
 	
 	@ApiOperation(value = "拿到通知", notes = "回傳所有通知")
