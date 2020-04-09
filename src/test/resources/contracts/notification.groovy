@@ -3,9 +3,10 @@ package contracts
 import org.springframework.cloud.contract.spec.Contract
 [
         Contract.make {
-            description "Notification Contract"
+            description ("notification Contract")
+            name ("newNotification")
             request {
-                method GET()
+                method ("GET")
                 url("/newNotification") {
                     queryParameters {
                         parameter("userID", "1")
@@ -15,13 +16,14 @@ import org.springframework.cloud.contract.spec.Contract
             }
             response {
                 body("success")
-                status 200
+                status (200)
             }
         },
         Contract.make {
-            description "Notification Contract"
+            description ("notification Contract")
+            name ("getNotification")
             request {
-                method GET()
+                method ("GET")
                 url("/getNotification") {
                     queryParameters {
                         parameter("userID", "1")
@@ -29,7 +31,7 @@ import org.springframework.cloud.contract.spec.Contract
                 }
             }
             response {
-                status 200
+                status (200)
             }
         }
 
