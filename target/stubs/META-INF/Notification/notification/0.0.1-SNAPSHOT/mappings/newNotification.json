@@ -1,0 +1,21 @@
+{
+  "id" : "d6d99d56-64f3-49fd-98fa-dbf893f496da",
+  "request" : {
+    "urlPath" : "/newNotification",
+    "method" : "GET",
+    "queryParameters" : {
+      "userID" : {
+        "equalTo" : "1"
+      },
+      "content" : {
+        "equalTo" : "ordering Successfully"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "success",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "d6d99d56-64f3-49fd-98fa-dbf893f496da"
+}
