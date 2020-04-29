@@ -21,7 +21,7 @@ import org.springframework.cloud.contract.spec.Contract
         },
         Contract.make {
             description ("notification Contract")
-            name ("getNotification")
+            name ("Ordering_getNotification")
             request {
                 method ("GET")
                 url("/getNotification") {
@@ -34,6 +34,4 @@ import org.springframework.cloud.contract.spec.Contract
                 status (200)
             }
         }
-
-
 ]
