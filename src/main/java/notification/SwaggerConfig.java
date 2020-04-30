@@ -1,6 +1,7 @@
 package notification;
 
 import com.soselab.vmamvserviceclient.service.ContractAnalyzer;
+import com.soselab.vmamvserviceclient.service.ContractAnalyzer2;
 import com.soselab.vmamvserviceclient.service.ServiceDependencyAnalyzer;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,8 @@ public class SwaggerConfig {
     ServiceDependencyAnalyzer serviceDependencyAnalyzer;
     @Autowired
     ContractAnalyzer contractAnalyzer;
+    @Autowired
+    ContractAnalyzer2 contractAnalyzer2;
 
     @Value("${spring.application.name}")
     private String appName;
@@ -33,6 +36,8 @@ public class SwaggerConfig {
     private String version;
     @Value("${contract.path}")
     private String contractPath;
+    @Value("${mappings.path}")
+    private String mappingsPath;
     @Value("${test.path}")
     private String testPath;
 
@@ -44,7 +49,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage(appName))
                 .paths(PathSelectors.any())
                 .build()
-                .extensions(contractAnalyzer.swaggerExtension(contractPath + appName + ".groovy", testPath + "testng-results.xml", appName))
+                .extensions(contractAnalyzer2.swaggerExtension(contractPath, mappingsPath, testPath + "testng-results.xml", appName))
                 .extensions(serviceDependencyAnalyzer.swaggerExtension(appName));
     }
 
