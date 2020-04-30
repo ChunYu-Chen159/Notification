@@ -49,7 +49,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage(appName))
                 .paths(PathSelectors.any())
                 .build()
-                .extensions(contractAnalyzer.swaggerExtension(contractPath + appName + ".groovy", testPath + "testng-results.xml", appName))
+                .extensions(contractAnalyzer2.swaggerExtension(contractPath, mappingsPath, testPath + "testng-results.xml", appName))
                 .extensions(serviceDependencyAnalyzer.swaggerExtension(appName));
     }
 
