@@ -1,0 +1,592 @@
+2020-05-01 04:35:52.421  INFO [bootstrap,,,] 1397 --- [main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+2020-05-01 04:35:52.489  INFO [bootstrap,,,] 1397 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@36f1046f: startup date [Fri May 01 04:35:52 CST 2020]; root of context hierarchy
+2020-05-01 04:35:52.917  INFO [bootstrap,,,] 1397 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 04:35:52.982  INFO [bootstrap,,,] 1397 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$903ce427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:35:53.457  INFO [bootstrap,,,] 1397 --- [main] notification.ContractVerifierTest        : No active profile set, falling back to default profiles: default
+2020-05-01 04:35:53.469  INFO [bootstrap,,,] 1397 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@77db3d02: startup date [Fri May 01 04:35:53 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f1046f
+2020-05-01 04:35:56.087  INFO [bootstrap,,,] 1397 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1a2dc229-8f40-3879-b0d4-ac3216725c83
+2020-05-01 04:35:56.214  INFO [bootstrap,,,] 1397 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 04:35:56.274  INFO [bootstrap,,,] 1397 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$3a8e9f58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:35:56.705  INFO [bootstrap,,,] 1397 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$903ce427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:35:59.520  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index2],methods=[GET]}" onto public org.springframework.http.ResponseEntity<notification.Notification> notification.NotificationController.index2()
+2020-05-01 04:35:59.526  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index3],methods=[GET]}" onto public java.lang.String notification.NotificationController.index3()
+2020-05-01 04:35:59.528  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setNotificationRead],methods=[GET]}" onto public java.lang.String notification.NotificationController.setNotificationRead(java.lang.String)
+2020-05-01 04:35:59.530  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.getNotification(java.lang.String)
+2020-05-01 04:35:59.532  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/newNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.newNotification(java.lang.String,java.lang.String)
+2020-05-01 04:35:59.534  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.deleteNotification(java.lang.String)
+2020-05-01 04:35:59.537  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String notification.NotificationController.index()
+2020-05-01 04:35:59.543  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-05-01 04:35:59.544  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-05-01 04:35:59.546  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-05-01 04:35:59.558  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 04:35:59.559  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 04:36:01.619  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.620  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2020-05-01 04:36:01.622  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2020-05-01 04:36:01.624  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.625  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-05-01 04:36:01.629  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2020-05-01 04:36:01.630  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2020-05-01 04:36:01.630  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.640  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.642  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.644  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.646  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.648  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.649  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.651  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-05-01 04:36:01.652  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.657  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2020-05-01 04:36:01.661  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-05-01 04:36:01.663  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-05-01 04:36:01.664  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.666  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2020-05-01 04:36:01.667  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:01.669  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2020-05-01 04:36:01.669  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2020-05-01 04:36:02.166  INFO [bootstrap,,,] 1397 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-01 04:36:02.226  INFO [bootstrap,,,] 1397 --- [main] c.s.v.service.ContractAnalyzer           : Contract Source: 
+package contracts
+
+import org.springframework.cloud.contract.spec.Contract
+[
+        Contract.make {
+            description ("notification Contract")
+            name ("newNotification")
+            request {
+                method ("GET")
+                url("/newNotification") {
+                    queryParameters {
+                        parameter("userID", "1")
+                        parameter("content", "ordering Successfully")
+                    }
+                }
+            }
+            response {
+                body("success")
+                status (200)
+            }
+        },
+        Contract.make {
+            description ("notification Contract")
+            name ("Ordering_getNotification")
+            request {
+                method ("GET")
+                url("/getNotification") {
+                    queryParameters {
+                        parameter("userID", "1")
+                    }
+                }
+            }
+            response {
+                status (200)
+            }
+        }
+]
+
+2020-05-01 04:36:02.257 ERROR [bootstrap,,,] 1397 --- [main] c.s.v.service.ContractAnalyzer           : InputStream cannot be null
+
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:118)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.readfile_testXml(ContractAnalyzer.java:167)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.getContractProperty(ContractAnalyzer.java:98)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.swaggerExtension(ContractAnalyzer.java:48)
+	at notification.SwaggerConfig.createRestApi(SwaggerConfig.java:47)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.CGLIB$createRestApi$0(<generated>)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238$$FastClassBySpringCGLIB$$fd4b1b56.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.createRestApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:212)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2020-05-01 04:36:02.277 ERROR [bootstrap,,,] 1397 --- [main] c.s.v.service.ContractAnalyzer           : InputStream cannot be null
+
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:118)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.readfile_testXml(ContractAnalyzer.java:167)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.getContractProperty(ContractAnalyzer.java:98)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.swaggerExtension(ContractAnalyzer.java:48)
+	at notification.SwaggerConfig.createRestApi(SwaggerConfig.java:47)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.CGLIB$createRestApi$0(<generated>)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238$$FastClassBySpringCGLIB$$fd4b1b56.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.createRestApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:212)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2020-05-01 04:36:02.427  INFO [bootstrap,,,] 1397 --- [main] org.reflections.Reflections              : Reflections took 110 ms to scan 2 urls, producing 3 keys and 9 values 
+2020-05-01 04:36:03.158  WARN [bootstrap,,,] 1397 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-01 04:36:03.159  INFO [bootstrap,,,] 1397 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 04:36:03.173  WARN [bootstrap,,,] 1397 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-01 04:36:03.174  INFO [bootstrap,,,] 1397 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 04:36:03.546  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@77db3d02: startup date [Fri May 01 04:35:53 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f1046f
+2020-05-01 04:36:03.707  INFO [bootstrap,,,] 1397 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:36:03.708  INFO [bootstrap,,,] 1397 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:36:03.870  INFO [bootstrap,,,] 1397 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:36:05.734  INFO [bootstrap,,,] 1397 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-05-01 04:36:06.284  INFO [bootstrap,,,] 1397 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-01 04:36:06.308  INFO [bootstrap,,,] 1397 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:36:06.309  INFO [bootstrap,,,] 1397 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-01 04:36:06.327  INFO [bootstrap,,,] 1397 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-01 04:36:06.397  INFO [bootstrap,,,] 1397 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-01 04:36:06.742  INFO [bootstrap,,,] 1397 --- [main] notification.ContractVerifierTest        : Started ContractVerifierTest in 15.517 seconds (JVM running for 16.801)
+2020-05-01 04:36:07.112  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/index2],methods=[GET]}" onto public org.springframework.http.ResponseEntity<notification.Notification> notification.NotificationController.index2()
+2020-05-01 04:36:07.112  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/index3],methods=[GET]}" onto public java.lang.String notification.NotificationController.index3()
+2020-05-01 04:36:07.113  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/setNotificationRead],methods=[GET]}" onto public java.lang.String notification.NotificationController.setNotificationRead(java.lang.String)
+2020-05-01 04:36:07.113  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/getNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.getNotification(java.lang.String)
+2020-05-01 04:36:07.114  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/newNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.newNotification(java.lang.String,java.lang.String)
+2020-05-01 04:36:07.115  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/deleteNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.deleteNotification(java.lang.String)
+2020-05-01 04:36:07.115  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String notification.NotificationController.index()
+2020-05-01 04:36:07.128  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@4e22fdc0
+2020-05-01 04:36:07.138  INFO [bootstrap,,,] 1397 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2020-05-01 04:36:07.138  INFO [bootstrap,,,] 1397 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-01 04:36:07.139  INFO [bootstrap,,,] 1397 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2020-05-01 04:36:07.425  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[140.121.196.23:4116], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 04:36:07.514  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-05-01 04:36:07.534  INFO [bootstrap,,,] 1397 --- [cluster-ClusterId{value='5eab36b761465b057524fce6', description='null'}-140.121.196.23:4116] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:2773}] to 140.121.196.23:4116
+2020-05-01 04:36:07.544  INFO [bootstrap,,,] 1397 --- [cluster-ClusterId{value='5eab36b761465b057524fce6', description='null'}-140.121.196.23:4116] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=140.121.196.23:4116, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 15]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6254001}
+2020-05-01 04:36:07.563  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2774}] to 140.121.196.23:4116
+2020-05-01 04:36:07.895  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/index2],methods=[GET]}" onto public org.springframework.http.ResponseEntity<notification.Notification> notification.NotificationController.index2()
+2020-05-01 04:36:07.896  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/index3],methods=[GET]}" onto public java.lang.String notification.NotificationController.index3()
+2020-05-01 04:36:07.899  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/setNotificationRead],methods=[GET]}" onto public java.lang.String notification.NotificationController.setNotificationRead(java.lang.String)
+2020-05-01 04:36:07.899  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/getNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.getNotification(java.lang.String)
+2020-05-01 04:36:07.900  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/newNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.newNotification(java.lang.String,java.lang.String)
+2020-05-01 04:36:07.900  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/deleteNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.deleteNotification(java.lang.String)
+2020-05-01 04:36:07.901  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String notification.NotificationController.index()
+2020-05-01 04:36:07.913  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@29b21fa6
+2020-05-01 04:36:07.919  INFO [bootstrap,,,] 1397 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2020-05-01 04:36:07.920  INFO [bootstrap,,,] 1397 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-01 04:36:07.921  INFO [bootstrap,,,] 1397 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2020-05-01 04:36:07.925  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[140.121.196.23:4116], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 04:36:07.934  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-05-01 04:36:07.939  INFO [bootstrap,,,] 1397 --- [cluster-ClusterId{value='5eab36b761465b057524fce7', description='null'}-140.121.196.23:4116] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:2775}] to 140.121.196.23:4116
+2020-05-01 04:36:07.942  INFO [bootstrap,,,] 1397 --- [cluster-ClusterId{value='5eab36b761465b057524fce7', description='null'}-140.121.196.23:4116] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=140.121.196.23:4116, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 15]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1653111}
+2020-05-01 04:36:07.953  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:2776}] to 140.121.196.23:4116
+2020-05-01 04:36:08.022  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/index2],methods=[GET]}" onto public org.springframework.http.ResponseEntity<notification.Notification> notification.NotificationController.index2()
+2020-05-01 04:36:08.023  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/index3],methods=[GET]}" onto public java.lang.String notification.NotificationController.index3()
+2020-05-01 04:36:08.023  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/setNotificationRead],methods=[GET]}" onto public java.lang.String notification.NotificationController.setNotificationRead(java.lang.String)
+2020-05-01 04:36:08.024  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/getNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.getNotification(java.lang.String)
+2020-05-01 04:36:08.024  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/newNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.newNotification(java.lang.String,java.lang.String)
+2020-05-01 04:36:08.025  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/deleteNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.deleteNotification(java.lang.String)
+2020-05-01 04:36:08.025  INFO [bootstrap,,,] 1397 --- [main] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String notification.NotificationController.index()
+2020-05-01 04:36:08.038  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@6b06da60
+2020-05-01 04:36:08.043  INFO [bootstrap,,,] 1397 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2020-05-01 04:36:08.043  INFO [bootstrap,,,] 1397 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-01 04:36:08.044  INFO [bootstrap,,,] 1397 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2020-05-01 04:36:08.046  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[140.121.196.23:4116], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 04:36:08.048  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-05-01 04:36:08.060  INFO [bootstrap,,,] 1397 --- [cluster-ClusterId{value='5eab36b861465b057524fce9', description='null'}-140.121.196.23:4116] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:2777}] to 140.121.196.23:4116
+2020-05-01 04:36:08.062  INFO [bootstrap,,,] 1397 --- [cluster-ClusterId{value='5eab36b861465b057524fce9', description='null'}-140.121.196.23:4116] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=140.121.196.23:4116, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 15]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1384195}
+2020-05-01 04:36:08.069  INFO [bootstrap,,,] 1397 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:2778}] to 140.121.196.23:4116
+2020-05-01 04:36:08.151  INFO [bootstrap,,,] 1397 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@77db3d02: startup date [Fri May 01 04:35:53 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f1046f
+2020-05-01 04:36:08.162  INFO [bootstrap,,,] 1397 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-01 04:36:08.172  INFO [bootstrap,,,] 1397 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application notification with eureka with status DOWN
+2020-05-01 04:36:08.177  INFO [bootstrap,,,] 1397 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 04:36:08.178  INFO [bootstrap,,,] 1397 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 04:36:08.430  INFO [bootstrap,,,] 1397 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@165454f7}] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5b0bc141: startup date [Fri May 01 04:36:08 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@77db3d02
+2020-05-01 04:36:08.529  INFO [bootstrap,,,] 1397 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@165454f7}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 04:36:08.574  WARN [bootstrap,,,] 1397 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@165454f7}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-05-01 04:36:08.579  INFO [bootstrap,,,] 1397 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [notification.NotificationTest], using SpringBootContextLoader
+2020-05-01 04:36:08.580  INFO [bootstrap,,,] 1397 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [notification.NotificationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-05-01 04:36:08.581  INFO [bootstrap,,,] 1397 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [notification.NotificationTest]: NotificationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-05-01 04:36:08.588  INFO [bootstrap,,,] 1397 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration notification.NotificationApplication for test class notification.NotificationTest
+2020-05-01 04:36:08.593  INFO [bootstrap,,,] 1397 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-05-01 04:36:08.598  INFO [bootstrap,,,] 1397 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7aadb5e8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f8060ac, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@308a2eb0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1df1bd44, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ae449e7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@660dcd17, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@71390c8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@179806f3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3f1bde96, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3776c917, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cf88ae1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7b80be13]
+2020-05-01 04:36:08.781  INFO [bootstrap,,,] 1397 --- [main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+2020-05-01 04:36:08.782  INFO [bootstrap,,,] 1397 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@331d651b: startup date [Fri May 01 04:36:08 CST 2020]; root of context hierarchy
+2020-05-01 04:36:08.824  INFO [bootstrap,,,] 1397 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 04:36:08.851  INFO [bootstrap,,,] 1397 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$903ce427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:36:09.068  INFO [bootstrap,,,] 1397 --- [main] notification.NotificationTest            : No active profile set, falling back to default profiles: default
+2020-05-01 04:36:09.070  INFO [bootstrap,,,] 1397 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@24f3d208: startup date [Fri May 01 04:36:09 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@331d651b
+2020-05-01 04:36:09.845  INFO [bootstrap,,,] 1397 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=deb9a348-a43e-3f45-b97e-9d1619fbd96f
+2020-05-01 04:36:09.898  INFO [bootstrap,,,] 1397 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 04:36:09.931  INFO [bootstrap,,,] 1397 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$3a8e9f58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:36:10.031  INFO [bootstrap,,,] 1397 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$903ce427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:36:11.241  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index2],methods=[GET]}" onto public org.springframework.http.ResponseEntity<notification.Notification> notification.NotificationController.index2()
+2020-05-01 04:36:11.241  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index3],methods=[GET]}" onto public java.lang.String notification.NotificationController.index3()
+2020-05-01 04:36:11.242  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setNotificationRead],methods=[GET]}" onto public java.lang.String notification.NotificationController.setNotificationRead(java.lang.String)
+2020-05-01 04:36:11.242  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.getNotification(java.lang.String)
+2020-05-01 04:36:11.243  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/newNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.newNotification(java.lang.String,java.lang.String)
+2020-05-01 04:36:11.243  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteNotification],methods=[GET]}" onto public java.lang.String notification.NotificationController.deleteNotification(java.lang.String)
+2020-05-01 04:36:11.244  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String notification.NotificationController.index()
+2020-05-01 04:36:11.246  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-05-01 04:36:11.247  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-05-01 04:36:11.247  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-05-01 04:36:11.250  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 04:36:11.251  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 04:36:12.182  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.184  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2020-05-01 04:36:12.185  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2020-05-01 04:36:12.185  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.186  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-05-01 04:36:12.187  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.187  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.188  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.189  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.190  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-05-01 04:36:12.191  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.192  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.193  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.199  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2020-05-01 04:36:12.200  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.202  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-05-01 04:36:12.203  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.203  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2020-05-01 04:36:12.204  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2020-05-01 04:36:12.204  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2020-05-01 04:36:12.205  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2020-05-01 04:36:12.205  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2020-05-01 04:36:12.206  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-05-01 04:36:12.207  INFO [bootstrap,,,] 1397 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-05-01 04:36:12.487  INFO [bootstrap,,,] 1397 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-01 04:36:12.515  INFO [bootstrap,,,] 1397 --- [main] c.s.v.service.ContractAnalyzer           : Contract Source: 
+package contracts
+
+import org.springframework.cloud.contract.spec.Contract
+[
+        Contract.make {
+            description ("notification Contract")
+            name ("newNotification")
+            request {
+                method ("GET")
+                url("/newNotification") {
+                    queryParameters {
+                        parameter("userID", "1")
+                        parameter("content", "ordering Successfully")
+                    }
+                }
+            }
+            response {
+                body("success")
+                status (200)
+            }
+        },
+        Contract.make {
+            description ("notification Contract")
+            name ("Ordering_getNotification")
+            request {
+                method ("GET")
+                url("/getNotification") {
+                    queryParameters {
+                        parameter("userID", "1")
+                    }
+                }
+            }
+            response {
+                status (200)
+            }
+        }
+]
+
+2020-05-01 04:36:12.519 ERROR [bootstrap,,,] 1397 --- [main] c.s.v.service.ContractAnalyzer           : InputStream cannot be null
+
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:118)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.readfile_testXml(ContractAnalyzer.java:167)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.getContractProperty(ContractAnalyzer.java:98)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.swaggerExtension(ContractAnalyzer.java:48)
+	at notification.SwaggerConfig.createRestApi(SwaggerConfig.java:47)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.CGLIB$createRestApi$0(<generated>)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238$$FastClassBySpringCGLIB$$fd4b1b56.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.createRestApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:212)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2020-05-01 04:36:12.539 ERROR [bootstrap,,,] 1397 --- [main] c.s.v.service.ContractAnalyzer           : InputStream cannot be null
+
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:118)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.readfile_testXml(ContractAnalyzer.java:167)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.getContractProperty(ContractAnalyzer.java:98)
+	at com.soselab.vmamvserviceclient.service.ContractAnalyzer.swaggerExtension(ContractAnalyzer.java:48)
+	at notification.SwaggerConfig.createRestApi(SwaggerConfig.java:47)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.CGLIB$createRestApi$0(<generated>)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238$$FastClassBySpringCGLIB$$fd4b1b56.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at notification.SwaggerConfig$$EnhancerBySpringCGLIB$$68069238.createRestApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:212)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2020-05-01 04:36:12.555  INFO [bootstrap,,,] 1397 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 2 urls, producing 3 keys and 9 values 
+2020-05-01 04:36:13.009  WARN [bootstrap,,,] 1397 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-01 04:36:13.009  INFO [bootstrap,,,] 1397 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-01 04:36:13.185  INFO [bootstrap,,,] 1397 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@24f3d208: startup date [Fri May 01 04:36:09 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@331d651b
+2020-05-01 04:36:13.276  INFO [bootstrap,,,] 1397 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:36:13.277  INFO [bootstrap,,,] 1397 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:36:13.367  INFO [bootstrap,,,] 1397 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:36:14.234  INFO [bootstrap,,,] 1397 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-05-01 04:36:14.516  INFO [bootstrap,,,] 1397 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-05-01 04:36:14.531  INFO [bootstrap,,,] 1397 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:36:14.532  INFO [bootstrap,,,] 1397 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-01 04:36:14.534  INFO [bootstrap,,,] 1397 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-01 04:36:14.547  INFO [bootstrap,,,] 1397 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-01 04:36:14.619  INFO [bootstrap,,,] 1397 --- [main] notification.NotificationTest            : Started NotificationTest in 6.01 seconds (JVM running for 24.678)
+2020-05-01 04:36:14.735  INFO [bootstrap,,,] 1397 --- [Thread-18] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@24f3d208: startup date [Fri May 01 04:36:09 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@331d651b
+2020-05-01 04:36:14.742  INFO [bootstrap,,,] 1397 --- [Thread-18] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-05-01 04:36:14.749  INFO [bootstrap,,,] 1397 --- [Thread-18] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application notification with eureka with status DOWN
+2020-05-01 04:36:14.753  INFO [bootstrap,,,] 1397 --- [Thread-18] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 04:36:14.771  INFO [bootstrap,,,] 1397 --- [Thread-18] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 04:36:15.461  INFO [bootstrap,,,] 1397 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@be73bbd}] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@44329ad7: startup date [Fri May 01 04:36:15 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@24f3d208
+2020-05-01 04:36:15.506  INFO [bootstrap,,,] 1397 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@be73bbd}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 04:36:15.544  WARN [bootstrap,,,] 1397 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@be73bbd}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
