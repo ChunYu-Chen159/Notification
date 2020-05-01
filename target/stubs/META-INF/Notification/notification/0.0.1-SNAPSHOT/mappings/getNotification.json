@@ -1,0 +1,17 @@
+{
+  "id" : "893ab918-853c-4713-abe6-9bb2d345b60b",
+  "request" : {
+    "urlPath" : "/getNotification",
+    "method" : "GET",
+    "queryParameters" : {
+      "userID" : {
+        "equalTo" : "1"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "893ab918-853c-4713-abe6-9bb2d345b60b"
+}

@@ -36,8 +36,8 @@ public class SwaggerConfig {
     private String version;
     @Value("${contract.path}")
     private String contractPath;
-    @Value("${mappings.path}")
-    private String mappingsPath;
+    /*@Value("${mappings.path}")
+    private String mappingsPath;*/
     @Value("${test.path}")
     private String testPath;
 
@@ -49,7 +49,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage(appName))
                 .paths(PathSelectors.any())
                 .build()
-                .extensions(contractAnalyzer2.swaggerExtension(contractPath, mappingsPath, testPath + "testng-results.xml", appName))
+                .extensions(contractAnalyzer2.swaggerExtension(contractPath, testPath + "testng-results.xml", appName))
                 .extensions(serviceDependencyAnalyzer.swaggerExtension(appName));
     }
 

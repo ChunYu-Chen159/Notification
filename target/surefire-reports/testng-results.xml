@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-30T22:45:25Z" name="Surefire suite" finished-at="2020-04-30T22:45:36Z" duration-ms="11202">
+    <groups>
+    </groups>
+    <test started-at="2020-04-30T22:45:25Z" name="Surefire test" finished-at="2020-04-30T22:45:36Z" duration-ms="11202">
+      <class name="notification.NotificationTest">
+        <test-method signature="testIndex()[pri:0, instance:testIndex(notification.NotificationTest)]" started-at="2020-05-01T06:45:36Z" name="testIndex" finished-at="2020-05-01T06:45:36Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndex -->
+      </class> <!-- notification.NotificationTest -->
+      <class name="notification.ContractVerifierTest">
+        <test-method signature="validate_getNotification()[pri:0, instance:validate_getNotification(notification.ContractVerifierTest)]" started-at="2020-05-01T06:45:32Z" name="validate_getNotification" finished-at="2020-05-01T06:45:33Z" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_getNotification -->
+        <test-method signature="validate_newNotification()[pri:0, instance:validate_newNotification(notification.ContractVerifierTest)]" started-at="2020-05-01T06:45:33Z" name="validate_newNotification" finished-at="2020-05-01T06:45:33Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_newNotification -->
+        <test-method signature="validate_ordering_getNotification()[pri:0, instance:validate_ordering_getNotification(notification.ContractVerifierTest)]" started-at="2020-05-01T06:45:33Z" name="validate_ordering_getNotification" finished-at="2020-05-01T06:45:33Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_ordering_getNotification -->
+      </class> <!-- notification.ContractVerifierTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
