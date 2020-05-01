@@ -27,8 +27,6 @@ public class SwaggerConfig {
     ServiceDependencyAnalyzer serviceDependencyAnalyzer;
     @Autowired
     ContractAnalyzer contractAnalyzer;
-    @Autowired
-    ContractAnalyzer2 contractAnalyzer2;
 
     @Value("${spring.application.name}")
     private String appName;
@@ -49,7 +47,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage(appName))
                 .paths(PathSelectors.any())
                 .build()
-                .extensions(contractAnalyzer2.swaggerExtension(contractPath, testPath + "testng-results.xml", appName))
+                .extensions(contractAnalyzer.swaggerExtension(contractPath, testPath + "testng-results.xml", appName))
                 .extensions(serviceDependencyAnalyzer.swaggerExtension(appName));
     }
 
