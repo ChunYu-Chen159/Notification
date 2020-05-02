@@ -1,7 +1,5 @@
 package notification;
 
-import com.soselab.vmamvserviceclient.service.ContractAnalyzer2;
-import groovy.lang.MetaClass;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
@@ -13,22 +11,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import org.springframework.cloud.contract.spec.Contract;
-import org.springframework.cloud.contract.verifier.util.ContractVerifierDslConverter;
-
-import groovy.lang.GroovyObject;
-
-import java.io.File;
-import java.util.Collection;
-
 public class Notification {
-
-
-    public void aaa() {
-
-        Collection<Contract> aa = ContractVerifierDslConverter.convertAsCollection(new File("123"));
-
-    }
 
 
 	public static String getNotification(String userID) 
@@ -39,7 +22,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -74,7 +57,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -107,7 +90,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -142,7 +125,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
