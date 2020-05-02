@@ -39,7 +39,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -74,7 +74,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -107,7 +107,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -142,7 +142,7 @@ public class Notification {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.196.23:4116");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
