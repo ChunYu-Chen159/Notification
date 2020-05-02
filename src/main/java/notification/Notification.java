@@ -1,5 +1,7 @@
 package notification;
 
+import com.soselab.vmamvserviceclient.service.ContractAnalyzer2;
+import groovy.lang.MetaClass;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
@@ -11,7 +13,24 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
+import org.springframework.cloud.contract.spec.Contract;
+import org.springframework.cloud.contract.verifier.util.ContractVerifierDslConverter;
+
+import groovy.lang.GroovyObject;
+
+import java.io.File;
+import java.util.Collection;
+
 public class Notification {
+
+
+    public void aaa() {
+
+        Collection<Contract> aa = ContractVerifierDslConverter.convertAsCollection(new File("123"));
+
+    }
+
+
 	public static String getNotification(String userID) 
 	{
 		try {  
