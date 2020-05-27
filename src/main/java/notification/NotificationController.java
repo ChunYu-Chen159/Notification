@@ -27,7 +27,7 @@ public class NotificationController {
 		return "success";
     }
 
-	// 模擬404
+/*	// 模擬404
 	@ApiOperation(value = "模擬404", notes = "回傳404")
 	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/index2", method = RequestMethod.GET)
@@ -54,7 +54,7 @@ public class NotificationController {
 			e.printStackTrace();
 		}
 		return result;
-	}
+	}*/
 
 	
 	@ApiOperation(value = "拿到通知", notes = "回傳所有通知")
