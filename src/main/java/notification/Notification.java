@@ -31,6 +31,10 @@ public class Notification {
             //建立集合
             String result = "[";
             MongoCollection<Document> collection = mongoDatabase.getCollection("notification");
+
+            Document options =  new Document();
+            options.put("account", userID);
+
             FindIterable<Document> fi = collection.find();
             MongoCursor<Document> cursor = fi.iterator();
             while(cursor.hasNext()) 
