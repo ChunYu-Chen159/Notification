@@ -13,11 +13,13 @@ import com.mongodb.client.MongoDatabase;
 
 public class Notification {
 
-
-	public static String getNotification(String userID) 
+    public static String getNotification(String userID)
 	{
-		try {  
-            
+		try {
+
+            String a = Integer.parseInt(userID) % 2 == 0 ? "Even" : "Odd";
+
+
 			System.out.println("MongoDBConnect to database begin");
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
@@ -32,8 +34,6 @@ public class Notification {
             String result = "[";
             MongoCollection<Document> collection = mongoDatabase.getCollection("notification");
 
-            Document options =  new Document();
-            options.put("account", userID);
 
             FindIterable<Document> fi = collection.find();
             MongoCursor<Document> cursor = fi.iterator();
