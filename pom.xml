@@ -194,14 +194,6 @@
 				<targetPath>${project.artifactId}/contracts/</targetPath>
 			</resource>
 			<resource>
-				<directory>target/stubs/META-INF/${project.groupId}/${project.artifactId}/${project.version}/mappings</directory>
-				<filtering>true</filtering>
-				<includes>
-					<include>**/*.json</include>
-				</includes>
-				<targetPath>${project.artifactId}/mappings/</targetPath>
-			</resource>
-			<resource>
 				<directory>target/surefire-reports</directory>
 				<filtering>true</filtering>
 				<includes>
