@@ -1,3 +1,4 @@
+/*
 package notification;
 
 import org.springframework.amqp.core.*;
@@ -53,13 +54,16 @@ public class RabbitConfig {
         return factory;
     }
 
+*/
 /*    @RabbitListener(queues = "date")
     public void receive1(String message) {
         System.out.println("consumer receive a fanout message 1: " + message);
-    }*/
+    }*//*
+
 
     //Connection connection = factory.createConnection();
 
+*/
 /*    @Bean
     public Queue dateQueue() {
         return new Queue("date");
@@ -68,5 +72,7 @@ public class RabbitConfig {
     @Bean
     public Queue objQueue() {
         return new Queue("object");
-    }*/
+    }*//*
+
 }
+*/
