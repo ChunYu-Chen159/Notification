@@ -1,8 +1,9 @@
+/*
 package contracts
 
 import org.springframework.cloud.contract.spec.Contract
 [
-/*        Contract.make {
+        Contract.make {
             description ("notification Contract")
             name ("ordering_newNotification")
             request {
@@ -18,5 +19,5 @@ import org.springframework.cloud.contract.spec.Contract
                 body("success")
                 status (200)
             }
-        }*/
-]
+        }
+]*/
