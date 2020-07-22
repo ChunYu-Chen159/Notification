@@ -1,4 +1,3 @@
-/*
 package contracts
 
 import org.springframework.cloud.contract.spec.Contract
@@ -20,4 +19,4 @@ import org.springframework.cloud.contract.spec.Contract
                 status (200)
             }
         }
-]*/
+]
