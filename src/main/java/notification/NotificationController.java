@@ -1,8 +1,10 @@
 package notification;
 
+import com.soselab.vmamvserviceclient.annotation.FeignRequest;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import notification.feign.OrderingInterface;
 import org.springframework.amqp.core.ExchangeTypes;
 import org.springframework.amqp.rabbit.annotation.*;
 import org.springframework.amqp.rabbit.annotation.Exchange;
@@ -17,7 +19,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Component
 public class NotificationController {
-
+	@Autowired
+	OrderingInterface orderingInterface;
 	
 /*
 	@ApiOperation(value = "測試此伺服器是否成功連線", notes = "成功連線就回傳success")
@@ -92,6 +95,19 @@ public class NotificationController {
     {
 		return Notification.deleteNotification(ID);
     }
+
+
+	@FeignRequest(client = OrderingInterface.class, method = "getSomething", parameterTypes = String.class)
+	@ApiOperation(value = "拿東西", notes = "拿東西")
+	@CrossOrigin(origins = "*")
+	@RequestMapping(value = "/getSomething", method = RequestMethod.GET)
+	public String getSomething(@ApiParam(required = true, name = "userID", value = "使用者編號") @RequestParam("userID") String userID)
+	{
+		String data = "";
+
+		return orderingInterface.getSomething(userID);
+
+	}
 }
 
 
