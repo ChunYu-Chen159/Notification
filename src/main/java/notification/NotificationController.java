@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Random;
 
 
 @Api(value = "NotificationController", tags = "與通知相關的所有一切都在這裡")
@@ -72,11 +73,17 @@ public class NotificationController {
 	@ApiOperation(value = "拿資訊", notes = "拿資訊")
 	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/getNotificationInformation", method = RequestMethod.GET)
-	public String getNotificationInformation(@ApiParam(required = true, name = "userID", value = "使用者編號") @RequestParam("userID") String userID)
+	public String getNotificationInformation(@ApiParam(required = true, name = "userID", value = "使用者編號") @RequestParam("userID") String userID, @ApiParam(required = true, name = "probability", value = "出錯機率") @RequestParam("probability") double probability)
 	{
+		Random random = new Random();
 
-		return orderingInterface.getNotificationInformation(userID);
+		int num = random.nextInt(1000) + 1;
 
+		if(num <= (int)(probability * 1000)){
+			return orderingInterface.getNotificationInformation(userID);
+		}else{
+			return "success";
+		}
 	}
 }
 
