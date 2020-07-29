@@ -76,7 +76,8 @@ public class NotificationController {
     public String newNotification(@ApiParam(required = true, name = "userID", value = "使用者編號") @RequestParam("userID") String userID,@ApiParam(required = true, name = "content", value = "通知內容") @RequestParam("content") String content)
     {
     	
-    	return Notification.newNotification(userID, content);
+//    	return Notification.newNotification(userID, content);
+		return "success";
     }
 	
 	@ApiOperation(value = "將通知標為已讀", notes = "標記成功就回傳成功")
