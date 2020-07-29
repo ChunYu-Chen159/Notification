@@ -97,15 +97,14 @@ public class NotificationController {
     }
 
 
-	@FeignRequest(client = OrderingInterface.class, method = "getSomething", parameterTypes = String.class)
-	@ApiOperation(value = "拿東西", notes = "拿東西")
+	@FeignRequest(client = OrderingInterface.class, method = "getNotificationInformation", parameterTypes = String.class)
+	@ApiOperation(value = "拿資訊", notes = "拿資訊")
 	@CrossOrigin(origins = "*")
-	@RequestMapping(value = "/getSomething", method = RequestMethod.GET)
-	public String getSomething(@ApiParam(required = true, name = "userID", value = "使用者編號") @RequestParam("userID") String userID)
+	@RequestMapping(value = "/getNotificationInformation", method = RequestMethod.GET)
+	public String getNotificationInformation(@ApiParam(required = true, name = "userID", value = "使用者編號") @RequestParam("userID") String userID)
 	{
-		String data = "";
 
-		return orderingInterface.getSomething(userID);
+		return orderingInterface.getNotificationInformation(userID);
 
 	}
 }
