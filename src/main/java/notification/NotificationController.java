@@ -31,36 +31,6 @@ public class NotificationController {
 		return "success";
     }
 */
-
-/*	// 模擬404
-	@ApiOperation(value = "模擬404", notes = "回傳404")
-	@CrossOrigin(origins = "*")
-	@RequestMapping(value="/index2", method = RequestMethod.GET)
-	public ResponseEntity<Notification> index2()
-	{
-
-		return ResponseEntity.notFound().build();
-	}
-
-	// 模擬回應
-	@ApiOperation(value = "模擬延遲", notes = "回應延遲")
-	@CrossOrigin(origins = "*")
-	@RequestMapping(value="/index3", method = RequestMethod.GET)
-	public String index3()
-	{
-
-		String result = "wait success";
-
-
-		long num = (long)(Math.random() * 30);
-		try {
-			Thread.sleep(num);
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-		return result;
-	}*/
-
 	
 	@ApiOperation(value = "拿到通知", notes = "回傳所有通知")
 	@CrossOrigin(origins = "*")
