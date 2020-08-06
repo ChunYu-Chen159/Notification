@@ -69,7 +69,7 @@ public class NotificationController {
     }
 
 
-	@FeignRequest(client = OrderingInterface.class, method = "getNotificationInformation", parameterTypes = String.class)
+/*	@FeignRequest(client = OrderingInterface.class, method = "getNotificationInformation", parameterTypes = String.class)
 	@ApiOperation(value = "拿資訊", notes = "拿資訊")
 	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/getNotificationInformation", method = RequestMethod.GET)
@@ -84,7 +84,7 @@ public class NotificationController {
 		}else{
 			return "success";
 		}
-	}
+	}*/
 }
 
 
